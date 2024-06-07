@@ -6,7 +6,7 @@
     font-family: 'Amazon Ember', sans-serif;
     text-decoration: none;
 } 
-.container{
+#container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@ img{
     padding:10px 25px;
     display: flex;
     flex-direction: column;
-    flex-wrap: warp;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -74,4 +74,89 @@ input:focus {
     box-shadow: 0 1px 0 rgb(255, 255, 255 / 50%), 0 1px 0 rgb(0,0,0/7%) inset;
 }
 
+.logo > img{
+    padding: 20px;
+}
+
+.pass-label{
+    justify-content: space-between;
+}
+
+.warn{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.warn > span > i{
+    color: lightseagreen;
+    font-size: 18px;
+    font-family: "Amazon Ember", sans-serif;
+}
+
+.btn{
+    margin: 10px 0;
+}
+
+button {
+    padding: 6px;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    background-color: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+}
+.signup-btn {
+    margin: 10px 0 0;
+    background-color: #f0c24e;
+    font-size: 13px;
+    line-height: 19px;
+    border: 1px solid #a88734 #9c7e31 #846a29;
+}
+.terms > p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.keep-signin {
+    margin: 20px 0px;
+}
+
+.keep-signin > a, 
+label{
+    font-size: 13px;
+}
+
+i{
+    padding-left: 5px;
+    color: gray;
+}
+
 /* Sign-up-end */
+
+/* Footer- started */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 30px 0;
+    border-top: 1px solid #ccc;
+    box-shadow: outset 1px 5px 5px 0px rgba(0, 0, 0, 0.31);
+    width: 40%;
+    margin: auto;
+}
+.term {
+    display: flex;
+    justify-content: center;
+}
+.term > p{
+    margin: 5px 5px;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin: 5px 0;
+}
+
+/* Footer ended */
+
