@@ -21,7 +21,48 @@ img{
 }
 
 .error-box{
+    width: 18%;
     display: none;
+}
+
+.error-list{
+    list-style-type: none;
+}
+
+.name-error,
+.email-error,
+.pass-error,
+.pass-short-error,
+.re-pass-error{
+    display: none;
+}
+
+.error {
+    margin: 20px 0;
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid #c40;
+    border-radius: 000 4px #fcf4f4 inset;
+    border-radius: 4px;
+    padding: 14px 18px 14px 20px;
+    display: flex;
+}
+.error span {
+    margin-left: 15px;
+}
+
+.error span > ul {
+    padding-top: 5px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+}
+
+.error h4{
+    color: red;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
 }
 
 /* Sign-up-start */

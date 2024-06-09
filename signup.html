@@ -15,106 +15,106 @@
     <!-- Logo -->
     <div id="container">
       <img src="Images/prime-logo.png" alt="main-logo" />
-    </div>
 
-    <!-- Warning -->
-    <header class="error-box">
-      <div class="error">
-        <p>
-          <i
-            class="fas fa-exlamation-triangle"
-            style="font-size: 25px; color: #c40000"
-          ></i>
-        </p>
+      <!-- Warning -->
+      <header class="error-box">
+        <div class="error">
+          <p>
+            <i
+              class="fas fa-exlamation-triangle"
+              style="font-size: 25px; color: #c40000"
+            ></i>
+          </p>
 
-        <span>
-          <h4>There was a problem</h4>
-          <ul class="error-list">
-            <li class="name-error">
-              <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
-              <span class="list">Enter Your name</span>
-            </li>
+          <span>
+            <h4>There was a problem</h4>
+            <ul class="error-list">
+              <li class="name-error">
+                <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
+                <span class="list">Enter Your name</span>
+              </li>
 
-            <li class="email-error">
-              <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
-              <span class="list">Enter Your email</span>
-            </li>
+              <li class="email-error">
+                <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
+                <span class="list">Enter Your email</span>
+              </li>
 
-            <li class="pass-error">
-              <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
-              <span class="list">Enter Your password</span>
-            </li>
+              <li class="pass-error">
+                <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
+                <span class="list">Enter Your password</span>
+              </li>
 
-            <li class="pass-Short-error">
-              <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
-              <span class="list">Password is too short</span>
-            </li>
+              <li class="pass-short-error">
+                <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
+                <span class="list">Password is too short</span>
+              </li>
 
-            <li class="re-pass-error">
-              <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
-              <span class="list">Password must match</span>
-            </li>
-          </ul>
-        </span>
-      </div>
-    </header>
-
-    <!-- Signup-start -->
-    <div class="signup-box">
-      <h1>Create account</h1>
-      <div class="input name">
-        <label for="name" class="inputtext">Your Name</label>
-        <input type="text" name="name" id="name" class="data" />
-      </div>
-
-      <div class="input email">
-        <label for="name" class="inputtext">Email or phone number</label>
-        <input type="text" name="email" id="email" class="data" />
-      </div>
-
-      <div class="input password">
-        <div class="pass-label">
-          <label for="password" class="inputtext">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="data"
-            placeholder="At least 6 characters"
-          />
+              <li class="re-pass-error">
+                <i class="fa fa-circle" style="font-size: 5px; color: #000"></i>
+                <span class="list">Password must match</span>
+              </li>
+            </ul>
+          </span>
         </div>
-        <p class="warn">
-          <span><i>i</i></span> password must be At least 6 characters
-        </p>
+      </header>
+
+      <!-- Signup-start -->
+      <div class="signup-box">
+        <h1>Create account</h1>
+        <div class="input name">
+          <label for="name" class="inputtext">Your Name</label>
+          <input type="text" name="name" id="name" class="data" />
+        </div>
+
+        <div class="input email">
+          <label for="name" class="inputtext">Email or phone number</label>
+          <input type="text" name="email" id="email" class="data" />
+        </div>
+
         <div class="input password">
           <div class="pass-label">
-            <label for="password" class="inputtext">Re-enter Password</label>
+            <label for="password" class="inputtext">Password</label>
             <input
               type="password"
               name="password"
-              id="re-enter-pass"
+              id="password"
               class="data"
+              placeholder="At least 6 characters"
             />
           </div>
+          <p class="warn">
+            <span><i>i</i></span> password must be At least 6 characters
+          </p>
+          <div class="input password">
+            <div class="pass-label">
+              <label for="password" class="inputtext">Re-enter Password</label>
+              <input
+                type="password"
+                name="password"
+                id="re-enter-pass"
+                class="data"
+              />
+            </div>
 
-          <div class="btn">
-            <button type="submit" class="signup-btn create-account-btn">
-              Create Your Amazon Account
-            </button>
-          </div>
+            <div class="btn">
+              <button type="submit" class="signup-btn create-account-btn">
+                Create Your Amazon Account
+              </button>
+            </div>
 
-          <div class="terms">
-            <p>
-              By creating this account, you agree to the Amazon
-              <a href="">Conditions of Use and Privacy Notice</a>
-            </p>
-          </div>
+            <div class="terms">
+              <p>
+                By creating this account, you agree to the Amazon
+                <a href="">Conditions of Use and Privacy Notice</a>
+              </p>
+            </div>
 
-          <div class="keep-signin">
-            <label for=""
-              >Already have an account? <a href="">Sign In</a
-              ><i class="fas fa-caret-right"></i
-            ></label>
+            <div class="keep-signin">
+              <label for=""
+                >Already have an account? <a onclick="signinpage()">Sign In</a
+                ><i class="fas fa-caret-right"></i
+              ></label>
+            </div>
           </div>
         </div>
       </div>
