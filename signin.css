@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+@import url("http://fonts.cdnfonts.com/css/amazon-ember");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
   font-family: "Amazon Ember", sans-serif;
   text-decoration: none;
 }
+/* Signin-start */
 #container {
   display: flex;
   flex-direction: column;
@@ -21,20 +22,8 @@ img {
 }
 
 .error-box {
+  display: none;
   width: 18%;
-  display: none;
-}
-
-.error-list {
-  list-style-type: none;
-}
-
-.name-error,
-.email-error,
-.pass-error,
-.pass-short-error,
-.re-pass-error {
-  display: none;
 }
 
 .error {
@@ -47,27 +36,33 @@ img {
   padding: 14px 18px 14px 20px;
   display: flex;
 }
+
+.error-list {
+  list-style-type: none;
+}
+
+.email-err,
+.pass-err,
+.wrong-credentails {
+  display: none;
+}
 .error span {
   margin-left: 15px;
 }
-
 .error span > ul {
   padding-top: 5px;
   font-size: 13px;
   line-height: 19px;
   color: #111;
 }
-
 .error h4 {
-  color: red;
+  color: #c40;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
 }
 
-/* Sign-up-start */
-
-.signup-box {
+.signin-box {
   border: 1px solid #ddd;
   margin: auto;
   margin-bottom: 26px;
@@ -80,7 +75,7 @@ img {
   justify-content: space-evenly;
 }
 
-.signup-box > h1 {
+.signin-box > h1 {
   font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
@@ -96,44 +91,34 @@ img {
   padding: 2px;
 }
 
+input:focus {
+  border: 2px solid #e98216;
+}
+
 a {
   color: #0066c0;
   cursor: pointer;
 }
-input {
-  transition: all 0.1s linear;
+
+.forget-pass {
+  font-weight: lighter;
 }
-input:focus {
-  border: 2px solid #e98216;
-}
+
 .data {
   width: 100%;
   height: 31px;
   padding: 3px 7px;
-  border: 1px solid #a6a6a6;
+  border: 1px solid #a6a6a6a6;
   border-top-color: #949494;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgb(255, 255, 255 / 50%), 0 1px 0 rgb(0, 0, 0/7%) inset;
-}
-
-.logo > img {
-  padding: 20px;
+  box-shadow: 0 1px 0 rgb(255, 255, 255 / 50%), 0 1px 0 rgb(0, 0, 0 / 7%) inset;
+  margin-right: 0;
+  outline: 0;
 }
 
 .pass-label {
+  display: flex;
   justify-content: space-between;
-}
-
-.warn {
-  font-size: 12px;
-  font-weight: 400;
-  color: gray;
-}
-
-.warn > span > i {
-  color: lightseagreen;
-  font-size: 18px;
-  font-family: "Amazon Ember", sans-serif;
 }
 
 .btn {
@@ -145,22 +130,26 @@ button {
   border-radius: 3px;
   width: 100%;
   cursor: pointer;
-  background-color: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  background-color: linear-gradient(to bottom, #f7ffa5, #f0c14b);
 }
-.signup-btn {
-  margin: 10px 0 0;
+
+.signin-btn {
+  margin: 10px 0 0 0;
   background-color: #f0c24e;
   font-size: 13px;
   line-height: 19px;
-  border: 1px solid #a88734 #9c7e31 #846a29;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
 }
+
 .terms > p {
   font-size: 12px;
   line-height: 1.5;
-  margin-top: 10px;
+  margin: 10px;
 }
+
 .keep-signin {
-  margin: 20px 0px;
+  margin: 20px 5px;
 }
 
 .keep-signin > a,
@@ -173,9 +162,31 @@ i {
   color: gray;
 }
 
-/* Sign-up-end */
+.new-to-amazon > h5 {
+  font: 10px sans-serif;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-/* Footer- started */
+.no-span {
+  text-align: center;
+  color: gray;
+  font-weight: lighter;
+}
+
+.signupage > button {
+  background-color: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  line-height: 19px;
+  border: 1px solid-p rgb(182, 175, 175);
+  outline: 0;
+  margin: 15px 0;
+}
+
+/* Signin-end */
+
+/* Footer-start */
 
 .footer {
   display: flex;
@@ -201,4 +212,4 @@ i {
   margin: 5px 0;
 }
 
-/* Footer ended */
+/* Footer-end */

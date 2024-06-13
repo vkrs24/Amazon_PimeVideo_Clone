@@ -73,6 +73,8 @@ header>img{
 }
 
 .text-over-image{
+    background: rgba(0,0,0,0);
+    box-shadow: inset 545px 0px 60px 0px #000;
     width: 45%;
     height: 100%;
     position: absolute;
