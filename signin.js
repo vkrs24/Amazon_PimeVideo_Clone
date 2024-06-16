@@ -26,7 +26,7 @@ document.querySelector(".login-btn").addEventListener("click", function () {
         check = true;
         alert("Signed in successfully");
         localStorage.setItem("userName", JSON.stringify(elem.name));
-        window.location.href = "afterSignIn.html";
+        window.location.href = "aftersignin.html";
       } else {
         if (flag !== 1) {
           check = false;
