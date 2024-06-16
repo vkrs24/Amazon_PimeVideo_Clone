@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Video || Quaterly Subscription</title>
+    <link rel="shortcut icon" href="Images/nav-icon.png" type="image/png" />
+    <link rel="stylesheet" href="subs.css" />
+    <script
+      src="https://kit.fontawesome.com/7edaac5171.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navigation-start -->
+    <nav>
+      <div class="left">
+        <img
+          src="Images/prime.png"
+          alt="logo"
+          class="cursor"
+          onclick="AfterSignIn()"
+        />
+        <h4>Watch now, cancel anytime</h4>
+        <h3>Start your membership today</h3>
+      </div>
+      <div class="right">
+        <img src="Images/subright.png" alt="logo-right" />
+      </div>
+    </nav>
+    <!-- navigation-end -->
+
+    <!-- main-start -->
+    <header>
+      <i class="fas fa-exclamation-circle"></i>
+      You will be charged
+      <strong>&#8377;459</strong>
+      for 3 months of Prime. Your Prime membership auto-renews every 3 months if
+      puchased using any of these
+      <a href="">eligible credit or debit cards</a>
+    </header>
+
+    <section>
+      <p>Select a paymnet method</p>
+      <div class="paymentOption">
+        <p class="underline">More payment options</p>
+        <div class="debit">
+          <input type="radio" name="payment" value="debit" onclick="pay(0)" />
+          <span>Add Debit/Credit/ATM Card</span>
+          <p>
+            Save your Master Card and VISA cards per new RBI guidelines.
+            <a href="">Learn more</a> <i class="fas fa-angle-down"></i>
+          </p>
+
+          <div class="cardImage">
+            <img src="Images/atm.png" alt="atm" />
+          </div>
+
+          <div class="debitContainer">
+            <div class="container">
+              <div class="name">
+                <p>Name on Card</p>
+                <input type="text" name="cardName" id="cardName" />
+              </div>
+
+              <div class="cardNumber">
+                <p>Card Number</p>
+                <input type="number" name="cardNumber" id="cardNumber" />
+              </div>
+
+              <div class="expiry">
+                <p>Expiration Date</p>
+                <input type="month" name="expiryDate" id="expiryDate" />
+              </div>
+
+              <div class="addCard">
+                <p></p>
+                <button id="addDebitCard">Add your card</button>
+              </div>
+            </div>
+          </div>
+          <!-- Net-banking -->
+          <div class="netbanking">
+            <input
+              type="radio"
+              name="payment"
+              value="netbanking"
+              onclick="pay(1)"
+            />
+            <span>Net Banking</span>
+            <p>
+              <select name="netbanking" id="netbanking">
+                <option value="">Choose a bank</option>
+                <option value="sbi">State Bank of India</option>
+                <option value="axis">Axis Bank</option>
+                <option value="canara">Canara Bank</option>
+                <option value="hdfc">HDFC Bank</option>
+                <option value="federal">Federal Bank</option>
+                <option value="icici">ICICI Bank</option>
+              </select>
+            </p>
+            <p class="netBankingOption">
+              <i
+                class="fas fa-exclamation-circle"
+                style="font-size: 18px; color: #0f79af"
+              ></i>
+              <span>For faster payment and instant refund, please use UPI</span>
+            </p>
+          </div>
+
+          <!-- UPI -->
+          <div class="upi">
+            <input type="radio" name="payment" value="upi" onclick="pay(2)" />
+            <span>Other UPI apps</span>
+            <div class="upiOption">
+              <p>Enter your UPI ID</p>
+              <input
+                type="text"
+                name="upiID"
+                id="upiID"
+                placeholder="Ex: mobilebumber@upi"
+              />
+              <button id="verify">verify</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="morePaymentOption">
+      <p>More Payment Options</p>
+      <div>
+        <div>
+          <p>Gift Cards and Promotional Codes</p>
+          <p>
+            <i class="fas fa-angle-down caretDown"></i
+            ><span id="promoCode">Enter a gift card or promotional code</span>
+          </p>
+          <div class="promoInput">
+            <input
+              type="text"
+              name="promocodeInput"
+              id="promocodeInput"
+              placeholder="Enter Code"
+            />
+            <button id="promoCheck">Apply</button>
+          </div>
+        </div>
+        <div><img src="Images/amazon.gif" alt="cards" /></div>
+      </div>
+    </section>
+
+    <section class="btn">
+      <button type="submit" onclick="proceed()" class="continueBtn" disabled>
+        Continue
+      </button>
+      <p>---- or</p>
+
+      <p>
+        <a href="monthlysubscription.html">Join Prime Monthly </a>
+        with auto renew (select credit and debit cards are eligible)
+      </p>
+    </section>
+
+    <!-- main-end -->
+
+    <!-- Footer-Start -->
+
+    <footer>
+      <div class="logo">
+        <div>
+          <img id="footer-img" src="Images/footer-logo.png" alt="footer-logo" />
+        </div>
+        <div class="copyright">
+          <p><a href="">Terms and Privacy Notice</a></p>
+          <p><a href="">Send us feedback</a></p>
+          <p><a href="">Help</a></p>
+          <p class="copy">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer-End -->
+
+    <!-- script -->
+    <script src="subs.js"></script>
+  </body>
+</html>
