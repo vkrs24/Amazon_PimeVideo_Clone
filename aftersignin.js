@@ -8,7 +8,7 @@ function subscription(duration) {
   } else if (duration === "annualSubscription") {
     window.location.href = "annualsubscription.html";
   } else if (duration === "quaterlySubscription") {
-    window.location.href = "quaterlySubscription.html";
+    window.location.href = "quaterlysubscription.html";
   } else if (duration === "monthlySubscription") {
     window.location.href = "monthlysubscription.html";
   }
